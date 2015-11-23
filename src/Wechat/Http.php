@@ -50,7 +50,7 @@ class Http extends HttpClient
      *
      * @param AccessToken $token
      */
-    public function __construct(AccessToken $token = null)
+    public function __construct(IAccessToken $token = null)
     {
         $this->token = $token;
         parent::__construct();
@@ -61,7 +61,7 @@ class Http extends HttpClient
      *
      * @param AccessToken $token
      */
-    public function setToken(AccessToken $token)
+    public function setToken(IAccessToken $token)
     {
         $this->token = $token;
     }
